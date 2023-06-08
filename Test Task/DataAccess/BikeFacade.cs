@@ -18,5 +18,17 @@ namespace DataAccess
 
             return result;
         }
+
+        public Manufacturer GetManufacturer(int id)
+        {
+            Manufacturer result = new Manufacturer();
+
+            using (TesttaskContext context = new TesttaskContext())
+            {
+                result = context.Manufacturers.Where(x => x.Id == id).FirstOrDefault();
+            }
+
+            return result;
+        }
     }
 }
