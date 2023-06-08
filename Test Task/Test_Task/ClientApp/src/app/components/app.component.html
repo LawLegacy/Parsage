@@ -1,0 +1,27 @@
+<div class="app-component app-container">
+  <ngx-toasta></ngx-toasta>
+
+  <a class="close-navbar-toggler collapsed" data-bs-toggle="collapse" data-bs-target=".menuItemsContainer">
+  </a>
+
+  <nav id="header" class="navbar navbar-expand-lg navbar-dark bg-primary fixed-top">
+    <div class="container-xl px-md-3 px-xxl-4">
+      <a ngPreserveWhitespaces class="navbar-brand" routerLink="/">
+        <span class="d-lg-none d-xl-inline">Test App</span>
+      </a>
+      <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target=".menuItemsContainer">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+    </div>
+  </nav>
+
+  
+  <main class="container-xl px-3 px-md-4 px-xxl-5">
+    <router-outlet></router-outlet>
+    <div class="footer-height"></div>
+  </main>
+
+
+ 
+</div>
